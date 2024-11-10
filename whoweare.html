@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>Who we are</title>
+
+<style>
+    @font-face {
+    font-family: 'NoonnuBasicGothicRegular';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noon-2410@1.0/NoonnuBasicGothicRegular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+	@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+    header {
+        text-align: left; 
+    }
+    
+    header > h3 {
+        display: inline-block;
+        position: relative;
+    }
+
+    .links {
+        display: inline; 
+        float: right;
+    }
+
+    header > .links > a, button {
+        display: inline-block;
+        font-family: 'Pretendard-Regular';
+        margin-left: 5px; 
+        font-size: 15px;
+        font-weight: 500;
+        text-decoration: none;
+        color : black;
+        margin-top : 60px;
+        margin-right :75px;
+    }
+
+    .links button {
+    background-color: skyblue;   
+    color: white;          
+    border: none;           
+    padding: 10px 20px;      
+    border-radius: 8px;     
+    cursor: pointer;         
+    font-size: 16px;          
+  }
+
+  .links button:hover { /* 마우스 올리면 색 진해짐 */
+    background-color: rgb(117, 182, 207); 
+  }
+
+
+    .mainText, .contentText {
+    font-family: 'NoonnuBasicGothicRegular'; 
+    }
+
+    .mainText h1 {
+    margin-top: 3%;
+    margin-left: 5%;
+ 
+    }
+
+    .contentText {
+    	margin-top: 10%;
+    	margin-left: 5%;
+
+    }
+
+    #king {
+    	z-index: 7;
+    	top: 10%;
+    	left: 30%;
+    }
+
+    #capsule {
+    	z-index: 5;
+    	top: 80%;
+    	left: calc(30% + 10%);
+
+    }
+
+    #earth {
+    	z-index: -1;
+    	top: 80%;
+    	left: 30%;
+    }
+
+
+</style>
+</head>
+
+<body>
+	<header> <!-- 상단 로고 및 메뉴바 -->
+    	<h3 class="logo" style="margin-top: 40px; margin-left: 35px;">
+        	<a href="main.html">    <!-- 상단 로고 클릭 시 메인화면으로 이동 -->
+        	<img src="media/logo.svg" alt="Capture CJR Logo" style="height: auto; width: 100%; border: 4px;">
+        	</a>
+    	</h3>
+	<nav class="links">  <!-- 메뉴 페이지 링크 수정바람 -->
+	<a href=".html">Store</a>	
+	<a href=".html">Map</a> 
+	<a href="whoweare.html">Who we are</a>
+	<a href="login.html">My profile</a>
+	<button onclick="location.href='capturelist.html'">List</button>
+	</nav>
+	</header>
+
+	<div class="mainText">
+		<h1>Who we are...</h1>
+	</div>
+
+	<div class="contentText"><h2>
+		<p>아주 먼 옛날, 아름다운 캡슐 왕국이 있었습니다. 이곳은 전국의 소중한 기억과 순간들을 타임캡슐로 보관해, 왕국에 활기를 불어넣는 마법의 힘으로 유지되는 신비한 곳이었습니다.</p>
+		<br>
+		<p>왕국의 캡슐들은 그곳에 모인 기억들 덕분에 서로에게서 온기를 느끼며 평화롭게 살아가고 있었습니다. 하지만 사람들이 새로운 기억을 남기는 일이 줄어들면서 왕국의 마법이 점점 약해지기 시작했습니다. 그로 인해 몇몇 마을은 활기를 잃었고, 캡슐 왕국도 서서히 힘을 잃어가는 위기에 처했습니다.</p>
+		<br>
+		<p>이때, 왕국의 가장 용감한 캡슐이자 기억을 담아내는 역할을 맡은 &apos;캡쮸리&apos;가 나섰습니다. 캡쮸리는 사람들의 추억을 담아내는 힘을 가졌고, 왕국을 위해 수없이 많은 기억들을 담아내며 행복을 전하는 임무를 수행해 왔습니다.</p>
+		<br>
+		<p>왕국의 &apos;왕캡쮸리&apos;는 캡쮸리에게 이렇게 말했습니다. &quot;용감한 캡쮸리여, 우리 왕국이 다시 활기를 되찾으려면 새로운 기억이 필요하단다. 전국 방방곡곡을 돌아다니며 사람들과 소중한 순간을 담아내, 그 기억의 힘으로 마법을 되살려주렴.&quot;</p>
+		<br>
+		<p>캡쮸리는 이 말을 듣고 전국을 여행하며 잊혀진 마을과 장소들에 새로운 기억을 심고, 사람들에게 잊지 못할 순간을 선사하기로 결심했습니다. 캡쮸리가 다녀간 자리에는 사람들과의 추억이 &apos;캡쮸리&apos;의 모습으로 남아, 자연스럽게 그곳에 활기를 불어넣었습니다.</p>
+		<br>
+		<p>캡쮸리는 사람들과 함께 여행하며 그들이 가진 소중한 순간과 이야기를 캡슐에 담아, 왕국에 돌아가면 이 기억을 다시금 되살려 왕국을 지켜내기로 마음먹었습니다. 캡쮸리는 더 많은 곳을 찾아 떠났고, 그 덕분에 점차 잃어가던 왕국의 마법은 하나둘씩 되돌아왔습니다.</p>
+		<br>
+		<p>전국을 누비며 많은 사람들에게 특별한 순간을 선사하고, 그 추억을 캡슐 속에 담아 다시금 캡슐 왕국을 평화롭고 활기차게 만드는 여정을 떠난 캡쮸리. 이제 캡쮸리는 왕국을 되살리기 위한 위대한 여정을 이어가며 사람들과 함께 소중한 기억을 만들어가고 있습니다.</p>
+	</h2>
+	</div>
+
+	<div style="text-align: center;">
+		<img id="king" src="media/kingcapsule.jpeg" alt="kingcapsule" style="width: 300px; height: 300px; border: 4px;">
+		<img id="capsule" src="media/capsule.png" alt="capsule" style="width: 200px; height: 200px; border: 4px;">
+		<img id="earth" src="media/earth.png" alt="earth" style="width: 700px; height: 700px; border: 4px";>
+	</div>
+
+	<hr>
+	<img src="media/character2.jpeg" alt="character2" style="width: 200px; heitght: 200px; margin-top: 10%; margin-left: 5%;">
+	<div class="mainText">
+		<h1>기획 의도와 목표</h1>
+	</div>
+	<div class="contentText"><h2>
+		<p>&apos;캡처! 캡쮸리!!&apos;는 지방 도시에 사람들을 주거시키겠다는 거창한 목표보다는, 게임을 통해 지역 관광 및 경제 활성화를 목표로 하고 있습니다. 사람들은 여행차 특정 지역에 방문했다가 매력을 느끼고 정착하기도 하니까요!</p>
+		<p>&apos;캡쮸리&apos;를 통해 다양한 지역을 탐방하면서 명소를 즐기고, 지역 상점이나 카페 등을 방문하다 보면 자연스럽게 지역 경제가 활성화됩니다. 잘 알려지지 않은 지역에서 아름다운 장소와 독특한 문화를 발견하며 그 지역의 매력을 재발견하고, 더 많은 사람들이 찾게 될 기회를 만들 수 있습니다.</p>
+		<p>&apos;캡쮸리&apos;는 특별한 순간과 장소를 하나의 캡슐에 담아내는 기념품 같은 경험을 선사합니다. 특정 장소에서의 추억을 기록하고, 사진이나 영상을 남겨 오래도록 특별한 기억으로 간직할 수 있습니다. 또한, 이러한 순간들을 SNS에 공유하면서 다른 사람들과 소통하고, 방문한 곳에서 받은 영감을 함께 나눔으로써 관심 있는 커뮤니티도 자연스럽게 형성됩니다.</p>
+		<p>캡쮸리에 기록이 쌓일수록 그것이 하나의 홍보 자료처럼 활용되어, 지방 도시나 소도시들이 주목받고 새로운 관광 명소로 자리잡을 가능성도 높아집니다. 이처럼 &apos;캡쮸리&apos;는 단순한 여행을 넘어, 자신만의 새로운 공간을 발견하는 즐거운 탐험의 기회로서 모든 순간이 작은 모험처럼 느껴져 여행의 재미를 한층 더합니다.</p>
+	</div>
+
+
+</body>
