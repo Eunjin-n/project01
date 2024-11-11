@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>Profile</title>
+<style>
+    @font-face {
+    font-family: 'NoonnuBasicGothicRegular';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noon-2410@1.0/NoonnuBasicGothicRegular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+    @font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+    header {
+        text-align: left; 
+    }
+    
+    header > h3 {
+        display: inline-block;
+        position: relative;
+    }
+
+    .links {
+        display: inline; 
+        float: right;
+    }
+
+    header > .links > a, button {
+        display: inline-block;
+        font-family: 'Pretendard-Regular';
+        margin-left: 5px; 
+        font-size: 15px;
+        font-weight: 500;
+        text-decoration: none;
+        color : black;
+        margin-top : 60px;
+        margin-right :75px;
+    }
+
+    .links button {
+    background-color: skyblue;   
+    color: white;          
+    border: none;           
+    padding: 10px 20px;      
+    border-radius: 8px;     
+    cursor: pointer;         
+    font-size: 16px;          
+  }
+
+  .links button:hover { /* 마우스 올리면 색 진해짐 */
+    background-color: rgb(117, 182, 207); 
+  }
+
+    .mainText, .user_name {
+    font-family: 'NoonnuBasicGothicRegular'; 
+    }
+
+    .mainText h1, .user_name h3 {
+    margin-top: 3%;
+    margin-left: 5%;
+    }
+
+    table {
+        border-collapse: collapse;
+    }
+
+    thead {
+        border-top: 1px solid gray;
+    }
+
+    th {
+        text-align: center;
+        padding: 5%;
+        height: 15px;
+        width: 200px;
+    }
+
+    td {
+        border-bottom: 1px solid gray;
+        text-align: center;
+        padding: 5%;
+        height: 15px;
+        width: 200px;
+    }
+
+    .user_info div {
+        display: inline-block;
+        margin-right: 5%;
+        margin-bottom: 2%;
+        /*vertical-align: middle;*/
+    }
+
+    .user_info table {
+        display: inline-block;
+        text-align: center;
+        vertical-align: middle;
+
+    }
+
+
+</style>
+
+</head>
+<body>
+<header> <!-- 상단 로고 및 메뉴바 -->
+    <h3 class="logo" style="margin-top: 40px; margin-left: 35px;">
+        <a href="main.html">    <!-- 상단 로고 클릭 시 메인화면으로 이동 -->
+        <img src="media/logo.svg" alt="Capture CJR Logo" style="height: auto; width: 100%; border: 4px;">
+        </a>
+    </h3>
+<nav class="links">  <!-- 메뉴 페이지 링크 수정바람 -->
+<a href=".html">Store</a>
+<a href=".html">Map</a> 
+<a href="whoweare.html">Who we are</a>
+<a href="login.html">My profile</a>
+<button onclick="location.href='capturelist.html'">List</button>
+</nav>
+</header>
+
+<body>
+    <div class="mainText">
+        <h1>My Profile...</h1>
+    </div>
+
+    <div class="user_info">
+        <div class="user_name">
+            <h3>{{user_name}} 님</h3> <!--백에서 사용자 이름 받아 처리-->
+        </div> 
+        <table>
+            <thead>
+                <tr><th>포인트</th><th>보유한 캡쮸리</th></tr>
+            </thead>
+            <tbody>
+                <tr><td>{{user_point}}P</td><td>{{user_cjr}}마리</td></tr> <!--백에서 사용자 포인트/사용자 캡쮸리 받아 처리-->
+            </tbody>
+        </table>
+    </div>
+
+    <div class="capture_list" style="margin-left: 8%; margin-top: 10%;">
+        <div class="mainText">
+            <h2>CAPTURE LIST</h2>
+        </div>
+        {{user_cji}} item
+        <br>
+        <hr style="margin-right: 8%;">
+    </div>
+
+
+</body>
+</html>
