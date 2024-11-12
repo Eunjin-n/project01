@@ -19,6 +19,21 @@
     font-style: normal;
 }
 
+	@font-face {
+    font-family: 'RiaSans-ExtraBold';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2410-1@1.0/RiaSans-ExtraBold.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+	@font-face {
+	font-family: 'BMJUA';
+	src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/BMJUA.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+
     header {
         text-align: left; 
     }
@@ -60,17 +75,14 @@
   }
 
 
-    .mainText, .contentText {
-    font-family: 'NoonnuBasicGothicRegular'; 
-    }
-
-    .mainText h1 {
-    margin-top: 3%;
+    .mainText {
+    font-family: 'RiaSans-ExtraBold'; 
+	margin-top: 3%;
     margin-left: 5%;
- 
     }
 
     .contentText {
+		font-family: BMJUA;
     	margin-top: 10%;
     	margin-left: 5%;
 
@@ -78,18 +90,20 @@
 
     .contentText p {
     	text-indent: 1em; /*들여쓰기*/
-    }
+    } 
 
     #king {
     	z-index: 7;
-    	top: 10%;
-    	left: 30%;
+		position: relative;
+    	top: 110px;
+    	left: 80px;
     }
 
     #capsule {
     	z-index: 5;
-    	top: 80%;
-    	left: calc(30% + 10%);
+		position: relative;
+    	top: 140px;
+    	left: 20px;
 
     }
 
@@ -98,7 +112,6 @@
     	top: 80%;
     	left: 30%;
     }
-
 
 </style>
 </head>
@@ -111,15 +124,15 @@
         	</a>
     	</h3>
 	<nav class="links">  <!-- 메뉴 페이지 링크 수정바람 -->
-	<a href=".html">Store</a>	
-	<a href=".html">Map</a> 
+	<a href="store.html">Store</a>	
+	<a href="map.html">Map</a> 
 	<a href="whoweare.html">Who we are</a>
 	<a href="login.html">My profile</a>
 	<button onclick="location.href='capturelist.html'">List</button>
 	</nav>
 	</header>
 
-	<div class="mainText">
+	<div class="mainText" style="font-size: 2em;">
 		<h1>Who we are...</h1>
 	</div>
 
@@ -140,10 +153,11 @@
 	</h2>
 	</div>
 
-	<div style="text-align: center;">
-		<img id="king" src="media/kingcapsule.jpeg" alt="kingcapsule" style="width: 300px; height: 300px; border: 4px;">
-		<img id="capsule" src="media/capsule.png" alt="capsule" style="width: 200px; height: 200px; border: 4px;">
-		<img id="earth" src="media/earth.png" alt="earth" style="width: 700px; height: 700px; border: 4px";>
+	<div class="illust" style="text-align: center;">
+		<img id="king" src="media/king.png" alt="kingcapsule" style="width: 200px; height: 200px; border: 4px; ">
+		<img id="capsule" src="media/capsule.png" alt="capsule" style="width: 170px; height: 170px; border: 4px;">
+        <br>
+		<img id="earth" src="media/earth.png" alt="earth" style="position: realtive; width: 700px; height: 700px; border: 4px";>
 	</div>
 
 	<hr>
